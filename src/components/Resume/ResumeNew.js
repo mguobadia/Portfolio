@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap"; // Import Col component
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Soumyajit_Behera-BIT_MESRA.pdf";
+import ee_pdf from "../../Assets/About/Resume/Guobadia_Graduate_Electrical_Engineering_Resume_2023_2024.pdf";
+import neuro_pdf from "../../Assets/About/Resume/Guobadia_Graduate_Neuroengineering_Resume_2023_2024.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -19,34 +20,47 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
+
+        {/* Row for buttons */}
+        <Row style={{ justifyContent: "center", position: "relative", marginBottom: "20px" }}>
+          <Col xs={12} md={6} className="text-center">
+            <Button
+              variant="primary"
+              href={ee_pdf}
+              target="_blank"
+              style={{ maxWidth: "250px" }}
+            >
+              <AiOutlineDownload />
+              &nbsp;Download Electrical Engineering CV
+            </Button>
+          </Col>
+
+          <Col xs={12} md={6} className="text-center">
+            <Button 
+              variant="primary"
+              href={neuro_pdf}
+              target="_blank"
+              style={{ maxWidth: "250px" }}
+            >
+              <AiOutlineDownload />
+              &nbsp;Download Neuroengineering CV
+            </Button>
+          </Col>
         </Row>
 
+        {/* Row for resumes */}
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
+          <Col xs={12} md={6} className="d-flex justify-content-center">
+            <Document file={ee_pdf}>
+              <Page pageNumber={1} scale={width > 1000 ? 1.1 : 0.6} />
+            </Document>
+          </Col>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
+          <Col xs={12} md={6} className="d-flex justify-content-center">
+            <Document file={neuro_pdf}>
+              <Page pageNumber={1} scale={width > 1000 ? 1.1 : 0.6} />
+            </Document>
+          </Col>
         </Row>
       </Container>
     </div>

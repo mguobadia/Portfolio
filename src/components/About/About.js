@@ -5,7 +5,9 @@ import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
-import Toolstack from "./Toolstack";
+import Coursework from "./Coursework";
+import Timeline from "./Timeline";
+import SkillSet from "./SkillSet";
 
 function About() {
   return (
@@ -22,7 +24,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              About <strong className="purple">Me</strong>
             </h1>
             <Aboutcard />
           </Col>
@@ -38,12 +40,18 @@ function About() {
           Professional <strong className="purple">Skillset </strong>
         </h1>
 
-        <Techstack />
+        <SkillSet />
 
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+          Professional <strong className="purple">Timeline </strong>
         </h1>
-        <Toolstack />
+
+        <Timeline />
+
+        <h1 className="project-heading">
+          Relevant <strong className="purple">Coursework</strong> taken
+        </h1>
+        <Coursework />
 
         <Github />
       </Container>

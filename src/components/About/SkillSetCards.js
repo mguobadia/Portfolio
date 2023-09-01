@@ -1,31 +1,27 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import { ListGroup, ListGroupItem } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
-function ProjectCards(props) {
+
+function SkillSetCards(props) {
   return (
-    <Card className="project-card-view">
+    <Card className="project-card-view" bg="secondary">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "left" }}>
           {props.description}
         </Card.Text>
-       
-        <Button
-          variant="primary"
-          href={props.demoLink}
-          target="_blank"
-          style={{ marginLeft: "10px" }}
-        >
-          <CgWebsite /> &nbsp;
-          {"Paper/Demo"}
-        </Button>
-        
       </Card.Body>
+      <ListGroup className="list-group-flush">
+        {props.items.map((item, index) => (
+          <ListGroup.Item variant="dark" textAlign="left" key={index}>{item}</ListGroup.Item>
+        ))}
+      </ListGroup>
     </Card>
   );
 }
-export default ProjectCards;
+export default SkillSetCards;

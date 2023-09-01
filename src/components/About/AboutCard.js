@@ -8,33 +8,31 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br /> I am a final year student pursuing an Integrated MSc (IMSc)
-            in Maths and Computing at BIT Mesra.
+            Hey everyone! My name is <span className="purple">Omozusi Guobadia.</span> I am a first-generation Nigerian-American who was born in New York City, New York, and  
+            raised in <span className="purple"> Houston, Texas.</span> 
             <br />
-            Additionally, I am currently employed as a software developer at
-            Juspay.
+            <br /> I am a first year graduate student pursuing a Master's of Engineering Degree (M.Eng)
+            in Computation and Cognition at MIT. My research focus will be in developing multifunctional fibers for unique neuronal recording purposes. I am a research affiliate of Jasanoff's Lab and Anikeeva's Lab.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            Apart from academic pursuits, here are some other activities that I like doing:
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Playing Video/Board Games
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Participating in Weirdly Athletic Activities
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Consuming Thrillers/Psychological Fiction
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "There is nothing impossible to those brave enough to try"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Alexander the Great</footer>
         </blockquote>
       </Card.Body>
     </Card>
