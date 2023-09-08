@@ -59,8 +59,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={arm}
-              title="Improvement on the SAMTEL ARM
-              microprocessor transistor(2021)"
+              title="Improvement on the SAMTEL ARM microprocessor transistors (2021)"
               description="Investigated ways to improve performance and efficiency on ARM transistor technology."
               demoLink="https://drive.google.com/file/d/1KqzhRJKyHVbH5iC7iQWQBTWM7GR3RpU-/view?usp=sharing"
             />
