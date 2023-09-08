@@ -38,6 +38,26 @@ function Coursework() {
             <CourseworkCards
               
               isBlog={false}
+              title="Solid State Circuits (6.2092)"
+              description="Fosters deep understanding and intuition that is crucial in innovating analog circuits and optimizing the whole system in bipolar junction transistor (BJT) and metal oxide semiconductor (MOS) technologies. Covers both theory and real-world applications of basic amplifier structures, operational amplifiers, temperature sensors, bandgap references. Covers topics such as noise, linearity and stability. Homework and labs give students access to CAD/EDA tools to design and analyze analog circuits. Provides practical experience through lab exercises, including a broadband amplifier design and characterization."
+              
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <CourseworkCards
+              
+              isBlog={false}
+              title="Analysis and Design of Digital Integrated Circuits (6.6010)"
+              description="Device and circuit level optimization of digital building blocks. Circuit design styles for logic, arithmetic, and sequential blocks. Estimation and minimization of energy consumption. Interconnect models and parasitics, device sizing and logical effort, timing issues (clock skew and jitter), and active clock distribution techniques. Memory architectures, circuits (sense amplifiers), and devices. Evaluation of how design choices affect tradeoffs across key metrics including energy consumption, speed, robustness, and cost. Extensive use of modern design flow and EDA/CAD tools for the analysis and design of digital building blocks and digital VLSI design for labs and design projects."
+              
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <CourseworkCards
+              
+              isBlog={false}
               title="Machine-Motivated Human Vision (9.60)"
               description="Explores how studies of human vision can be motivated by, and enhance the capabilities of, machine-based systems. Considers the twin questions of how the performance of state-of-the-art machine vision systems compares with that of humans, and what kinds of strategies the human visual system uses in tasks where human performance exceeds that of machines."
               
