@@ -48,26 +48,26 @@ function ResumeNew() {
           </Col>
         </Row>
 
-       <Row className="resume">
-          <Col xs={12} md={6} className="d-flex justify-content-center" style={{ margin: '10px' }}>
-            <Document file={ee_pdf}>
-              <Page pageNumber={1} scale={width > 1000 ? 1.1 : 0.6} />
-            </Document>
-          </Col>
+       {/* Row for resumes */}
+        <Row className="resume">
+        <Col xs={12} md={6} className="d-flex justify-content-center mb-3">
+          <Document file={ee_pdf}>
+            <Page pageNumber={1} scale={0.75} />
+          </Document>
+        </Col>
 
-          <Col xs={12} md={6} className="d-flex justify-content-center" style={{ margin: '10px' }}>
-            <Document file={neuro_pdf}>
-              <Page pageNumber={1} scale={width > 1000 ? 1.1 : 0.6} />
-            </Document>
-          </Col>
-        </Row>
+        <Col xs={12} md={6} className="d-flex justify-content-center mb-3">
+          <Document file={neuro_pdf}>
+            <Page pageNumber={1} scale={0.75} />
+          </Document>
+        </Col>
+      </Row>
       </Container>
     </div>
   );
 }
 
 export default ResumeNew;
-
 
 
 
