@@ -48,15 +48,14 @@ function ResumeNew() {
           </Col>
         </Row>
 
-        {/* Row for resumes */}
-        <Row className="resume">
-          <Col xs={12} md={6} className="d-flex justify-content-center">
+       <Row className="resume">
+          <Col xs={12} md={6} className="d-flex justify-content-center" style={{ margin: '10px' }}>
             <Document file={ee_pdf}>
               <Page pageNumber={1} scale={width > 1000 ? 1.1 : 0.6} />
             </Document>
           </Col>
 
-          <Col xs={12} md={6} className="d-flex justify-content-center">
+          <Col xs={12} md={6} className="d-flex justify-content-center" style={{ margin: '10px' }}>
             <Document file={neuro_pdf}>
               <Page pageNumber={1} scale={width > 1000 ? 1.1 : 0.6} />
             </Document>
@@ -68,3 +67,8 @@ function ResumeNew() {
 }
 
 export default ResumeNew;
+
+
+
+
+
