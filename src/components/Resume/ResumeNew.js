@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap"; // Import Col component
+import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import ee_pdf from "../../Assets/About/Resume/Guobadia_Graduate_Electrical_Engineering_Resume_2023_2024.pdf";
@@ -10,10 +10,20 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
-  const [width, setWidth] = useState(1200);
+  const [width, setWidth] = useState(window.innerWidth); // Initialize with the initial width
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    // Update width when the window is resized
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      // Remove the resize event listener when the component unmounts
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
@@ -48,27 +58,23 @@ function ResumeNew() {
           </Col>
         </Row>
 
-       {/* Row for resumes */}
+        {/* Row for resumes */}
         <Row className="resume">
-        <Col xs={12} md={6} className="d-flex justify-content-center mb-3">
-          <Document file={ee_pdf}>
-            <Page pageNumber={1} scale={0.75} />
-          </Document>
-        </Col>
+          <Col xs={12} md={6} className="d-flex justify-content-center mb-3">
+            <Document file={ee_pdf}>
+              <Page pageNumber={1} scale={width*0.0008} />
+            </Document>
+          </Col>
 
-        <Col xs={12} md={6} className="d-flex justify-content-center mb-3">
-          <Document file={neuro_pdf}>
-            <Page pageNumber={1} scale={0.75} />
-          </Document>
-        </Col>
-      </Row>
+          <Col xs={12} md={6} className="d-flex justify-content-center mb-3">
+            <Document file={neuro_pdf}>
+              <Page pageNumber={1} scale={width*0.0008} />
+            </Document>
+          </Col>
+        </Row>
       </Container>
     </div>
   );
 }
 
 export default ResumeNew;
-
-
-
-
