@@ -107,6 +107,14 @@ function Projects() {
               demoLink="https://drive.google.com/file/d/13bPMMM39OB2eLF4nxpZo7t_q-czOquxD/view?usp=sharing"
             />
           </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={BroadbandAmp}
+              title="11.5 MHz 4-Stage BJT Broadband Amplifier (2023)"
+              description="Design of a four-stage broadband amplifier utilizing the 2N3906 and 2N3904 bipolar junction transistors (BJT) is described. The approach consists of three dispersed stages of amplification, produced by three NPN (2N3904) transistors, preceded by a buffer stage utilizing a PNP (2n306) transistor."
+              demoLink="https://drive.google.com/file/d/1qFC7GwJnJGVELnFU4dsxi2v_cCk0df3M/view?usp=sharing"
+            />
+          </Col>
 
           
         </Row>
