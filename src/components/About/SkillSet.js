@@ -35,7 +35,7 @@ function SkillSet() {
              "Designed a library of integrated circuits in Cadence Allegro that are IBMs Z Mainframe Cards with IBM Internship",
              "Designed a light-wave communicator and color organ circuit within Electronic Projects Laboratory",
              "Designed RFID amplifier circuit for SplitBit Project within Electromagnetic Fields and Energy class",
-             "Drew sample schematics from Electronics Textbook and conducted various circuit simulations in LTSpice for graduate school summer prep"
+             "Designed a broadband amplifier with 2N3904 and 2N3906 BJTs"
             ]}
         />
       </Col>
@@ -62,7 +62,8 @@ function SkillSet() {
           items = {[
             "Soldered connections on AttentivU Glasses, and EEG Headset within Motorola Group in Media Lab",
             "Taught and reviewed soldering mechanics to high school students creating underwater rovers within NSLC",
-            "Soldered and tested connections on measurement electrodes within Jasanoff Lab"
+            "Soldered and tested connections on measurement electrodes within Jasanoff Lab",
+            "Utilized Osilloscope to conduct Frequency Response Analysis on broadband amplifier circuit"
           ]}
           
         />
@@ -101,11 +102,13 @@ function SkillSet() {
         <SkillSetCards
           
           imgPath = {cad}
-          title="Computer Aided-Design (CAD)"
-          description = "Designed non-electronic casing or product utilzing design software."
+          title="SPICE/CAD/EE Software Tools"
+          description = "Created circuit schematics, layouts and testbenches with the aid of software tools such Vivado, SPICE etc"
           items = {[
-            "Designed and 3D-printed die utilizing TinkerCAD",
-            "Designed engine parts utilizing AutoCAD within MIT Engine Team"
+            "Synthesized and routed PicoRV32 IMC CPU with Intel 16nm PDK 1024x36 bit SRAM",
+            "Designed, tested, and constructed layout that passed DRC/LVS checks for CMOS NAND Gate utilizing Xilinx Vivado Software",
+            "Simulated broadband amplifier design utilizing SPICE software"
+            
           ]}
           
         />
