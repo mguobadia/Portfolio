@@ -26,6 +26,37 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ar_vr}
+              title="CiM 8-bit Single Slope Analog-to-Digital Converter (2024)"
+              description="This paper outlines the development and comprehensive analysis of an innovative single-scope analog-to-digital converter (ADC), meticulously crafted using advanced 22nm 
+                CMOS technology. The ADC is specifically designed for integration into resistive compute-in-memory (CiM) applications, which are rapidly gaining prominence due to their potential
+to significantly enhance processing speeds and reduce energy consumption in computing systems."
+              demoLink="https://drive.google.com/file/d/152AC-7g-RV7okN7g9J-Lt4kWxGqesf0_/view?usp=sharing"
+            />
+          </Col>
+
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ar_vr}
+              title="CMOS Two-Stage Miller Operational Amplifier (2024)"
+              description="—This paper presents the design and analysis of a
+ two-stage operational amplifier, developed using 22nm CMOS
+ technology. The design features a unique combination of a
+ PMOS-input differential stage and a subsequent CMOS common
+ source stage with swing amplification, both optimized through the
+ use of a compensation capacitor and resistor pair for enhanced
+ bandwidth and phase margin control"
+              demoLink="https://drive.google.com/file/d/10TbekEJ81zAbohzMRt7_FTDy45Ud_bko/view?usp=sharing"
+            />
+          </Col>
+                
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={ar_vr}
