@@ -49,7 +49,7 @@ to significantly enhance processing speeds and reduce energy consumption in comp
             <ProjectCard
               imgPath={cmosamp}
               title="CMOS Two-Stage Miller Operational Amplifier (2024)"
-              description="—This paper presents the design and analysis of a
+              description="This paper presents the design and analysis of a
  two-stage operational amplifier, developed using 22nm CMOS
  technology. The design features a unique combination of a
  PMOS-input differential stage and a subsequent CMOS common
