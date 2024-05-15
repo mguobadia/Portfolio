@@ -13,6 +13,9 @@ import axon from "../../Assets/Projects/9422_Final.jpg";
 import hopfield from "../../Assets/Projects/hopfield.png";
 import broadbandamp from "../../Assets/Projects/BroadbandAmp.png";
 
+import cmosamp from "../../Assets/Projects/66000_mid.png";
+import ADC from "../../Assets/Projects/66000_final.png";
+
 
 function Projects() {
   return (
@@ -31,7 +34,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={ar_vr}
+              imgPath={ADC}
               title="CiM 8-bit Single Slope Analog-to-Digital Converter (2024)"
               description="This paper outlines the development and comprehensive analysis of an innovative single-scope analog-to-digital converter (ADC), meticulously crafted using advanced 22nm 
                 CMOS technology. The ADC is specifically designed for integration into resistive compute-in-memory (CiM) applications, which are rapidly gaining prominence due to their potential
@@ -44,7 +47,7 @@ to significantly enhance processing speeds and reduce energy consumption in comp
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={ar_vr}
+              imgPath={cmosamp}
               title="CMOS Two-Stage Miller Operational Amplifier (2024)"
               description="—This paper presents the design and analysis of a
  two-stage operational amplifier, developed using 22nm CMOS
